@@ -12,7 +12,7 @@ try:
     x = transform(x)
 
 
-    print(f'A) {x} * 2 = {transform(2*x)}')
+    print(f'A) {neg(x)} * 2 = {transform(2*x)}')
 
     print(f'Б) Sinus of {x}: {sin(x)}')
 
@@ -27,7 +27,7 @@ try:
 
     print(f'Е)5 * cosinus of {x} = {5*cos(x)}')
     
-    print(f'Ж)-7\'5 * {x} ^ 2 = {-7.5*x**2}')
+    print(f'Ж)-7\'5 * {neg(x)} ^ 2 = {-7.5*x**2}')
     
     try:
         print(f'3)3 *  √{x} = {3*transform(sqrt(x))}')
@@ -42,7 +42,7 @@ try:
     print(f'И) sin{x} * cos{y} + cos{x} * sin{y}: {sin(x)*cos(y)+cos(x)*sin(y)}')
 
     try:
-        print(f'K){x} *  √{2*y} = {x*transform(sqrt(2*y))}')
+        print(f'K){x} *  √{2*neg(y)} = {x*transform(sqrt(2*y))}')
     except:
         print(f'K) Square root of {y} doesn\'t exist')
 
