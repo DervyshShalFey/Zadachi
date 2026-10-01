@@ -12,8 +12,9 @@ def pluey(x): #добавление + или -
         x = str(x)
         x = f'+{x}'
     return(x)
-def tpluey(x): #добавление + или -
+def tpluey(x): #добавление при -
+    x*=-1
     if x > 0:
-        x = str(x)
-        x = f'-{x}'
+        x=str(x)
+        x=f'+{x}'
     return(x)
